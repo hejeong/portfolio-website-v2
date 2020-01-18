@@ -1,0 +1,48 @@
+<section id="top-container">
+   <div class='content'>
+      <h1 class="logo-component bold">Jonathan</h1><h1 class="logo-component">Hong</h1>
+      <%= link_to "Contact", '#background-container',:class => 'navbar-link'%>
+      <%= link_to "Work", '#background-container',:class => 'navbar-link rmarg-5vw'%>
+      <p class="regular-text marg-top-24vh">Hi, my name is</p>
+      <h1 class="large-text bold">Jonathan Hong</h1>
+      <p class="sub-text">A full stack software engineer focused on building seamless interfaces and improving user experiences.</p>
+   
+      <%= link_to "View my resume", 'https://www.dropbox.com/s/279qikkjwe6cevh/Jonathan%20Hong%20Resume.pdf?dl=0', :target => '_blank', :class => 'resume'%>
+     
+      <%= image_tag 'polygon.svg', :class => 'home-visual polygon'%>
+      <%= image_tag 'rectangle.svg', :class => 'home-visual rectangle'%>
+   </div>   
+</section>
+
+<section id='background-container'>
+   <div class='content'>
+      <h1 class='section-title'>Background</h1> <hr class='background-hr'>
+      <p class="sub-text width-30vw marg-top-7vh profile-desc">Hello, I’m Jonathan, a software enginner based in New Brunswick, NJ. I’m expecting to graduate from Rutgers University School of Engineering in May of 2020, pursuing a Bachelor of Science in Computer Engineering with a minor in Computer Science.</p>
+      <p class="sub-text width-30vw marg-top-7vh profile-desc">Here are a few technologies I’ve been working with:</p>
+      <%= image_tag 'profile_square.svg', :class => 'profile-border-square-1'%>
+      <%= image_tag 'me.jpg', :class => 'profile-picture', :width => '300', :height => '300' %>
+      <%= image_tag 'profile_square.svg', :class => 'profile-border-square-2'%>
+   </div>
+</section>
+
+<section id='projects-container'>
+   <div class='content'>
+      <h1 class='section-title'>Noteworthy Projects</h1> <hr class='projects-hr'>
+      <div class='project-row'>
+         <div class='project-text-left'>
+            <h3 class="project-title regular-text bold marg-top-7vh">Project Title</h3> <br>
+            <p class="project-desc sub-text width-20vw marg-top-4vh">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus convallis pellentesque. Cras velit metus, ornare nec augue et, gravida volutpat justo. Nullam quis ex et nibh varius blandit a quis tortor. Integer ac dui augue. Phasellus imperdiet faucibus risus. In lectus arcu, rhoncus quis elit ut, condimentum posuere augue. </p>
+            <i class="fab fa-github"></i>
+         </div>
+         <%= image_tag 'project_rectangle.png', :class => 'project-rectangle-right marg-top-7vh', :height => '300'%>
+      </div>
+      
+      <div class='project-row marg-top-10vh'>
+         <div class='project-text-right'>
+            <h3 class="project-title regular-text bold marg-top-10vh">Project Title</h3> <br>
+            <p class="project-desc sub-text width-20vw marg-top-4vh">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus convallis pellentesque. Cras velit metus, ornare nec augue et, gravida volutpat justo. Nullam quis ex et nibh varius blandit a quis tortor. Integer ac dui augue. Phasellus imperdiet faucibus risus. In lectus arcu, rhoncus quis elit ut, condimentum posuere augue. </p>
+         </div>
+         <%= image_tag 'project_rectangle.png', :class => 'project-rectangle-left marg-top-10vh', :height => '300'%>
+      </div>
+   </div>
+</section>

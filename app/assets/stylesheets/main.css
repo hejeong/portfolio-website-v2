@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1, h2, h3 {
+    display: inline;
+}
+
+#top-container {
+    height: 90vh;
+    width: 80%;
+    max-width: 100%;
+    background-color: #5E488E;
+    padding: 5vh 10%;
+}
+
+.logo-component {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    display: inline;
+    color: #F1F1F6;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F1F1F6;
+    padding-top: 0.5vh;
+    float: right;
+}
+
+.rmarg-5vw {
+    margin-right: 5%;
+}
+
+.home-visual {
+    position: absolute;
+    top: 24vh;
+    right: 10vw;
+}
+.polygon {
+    z-index: 2;
+}
+.rectangle {
+    z-index: 1;
+}
+
+.regular-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #F1F1F6;
+    letter-spacing: 1px;
+}
+.marg-top-24vh{
+    margin-top: 24vh
+}
+
+.large-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #F1F1F6;
+}
+
+.sub-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 40%;
+    color: #F1F1F6;
+    display: block;
+    letter-spacing: 2px;
+}
+.resume {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #F1F1F6;
+    background-color: #767BF2;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.resume:hover {
+    background-color: rgba(115, 120, 248, 0.329);
+    color: rgba(255, 255, 255, 0.445);
+}
+
+/* Section II: My Background */
+#background-container {
+    height: 80vh;
+    width: 70%;
+    max-width:100%;
+    background-color: #B5B9FF;
+    padding: 10vh 15%;
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F1F1F6;
+}
+
+.background-hr{
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #F1F1F6;
+    width: 80%;
+    margin: 0.6em 0;
+    padding: 0;
+}
+
+.width-30vw {
+    width: 30vw;
+}
+
+.marg-top-7vh {
+    margin-top: 7vh;
+}
+
+.profile-border-square-1 {
+    position: absolute;
+    top: 122vh;
+    right: 20.75vw;
+    z-index: 1;
+}
+
+.profile-border-square-2 {
+    position: absolute;
+    top: 126vh;
+    right: 18.75vw;
+    z-index: 2;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 124vh;
+    right: 19.75vw;
+    z-index: 3;
+}
+
+/* Section III: Noteworthy Projects*/
+#projects-container {
+    height: 80vh;
+    width: 70%;
+    max-width:100%;
+    background-color: #97A2FF;
+    padding: 10vh 15%;
+}
+
+.projects-hr{
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #F1F1F6;
+    width: 67%;
+    margin: 0.6em 0;
+    padding: 0;
+}
+h3.regular-text {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.marg-top-4vh {
+    margin-top: 4vh;
+}
+
+.marg-top-10vh{
+    margin-top: 10vh;
+}
+
+.width-20vw{
+    width: 23vw;
+}
+.project-row {
+    clear: both;
+}
+.project-text-left{
+    float: left;
+}
+.project-text-right {
+    text-align: right;
+    float: right;
+}
+
+.project-rectangle-right {
+    float: right;
+}
+
+.project-rectangle-left {
+    float: left;
+}
+
+
+/* For screens bigger than 1440 x 1024 */
+
+@media screen and (min-width: 1441px) {
+    .content {
+        height: 572px;
+        width: 1152px;
+        max-width: 100%;
+        margin: 0px auto;
+    }
+    .home-visual {
+        position: absolute;
+        top: 24vh;
+        right: 20vw;
+    }
+
+    .profile-border-square-1 {
+        position: absolute;
+        top: 120vh;
+        right: 30.75vw;
+        z-index: 1;
+    }
+    
+    .profile-border-square-2 {
+        position: absolute;
+        top: 124vh;
+        right: 28.75vw;
+        z-index: 2;
+    }
+    
+    .profile-picture {
+        position: absolute;
+        top: 122vh;
+        right: 29.75vw;
+        z-index: 3;
+    }
+
+    .profile-desc {
+        width: 500px;
+    }
+}
