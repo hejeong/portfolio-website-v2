@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
+* {
+    
+}
 
 html, body {
     margin: 0;
@@ -17,7 +19,7 @@ h1, h2, h3 {
     max-width: 100%;
     background-color: #6A8EAE;
     padding: 5vh 10%;
-    vertical-align: middle;
+    
 }
 
 .logo-component {
@@ -39,7 +41,11 @@ h1, h2, h3 {
     /*position: absolute;
     top: 25vh;
     right: 10vw;*/
-
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .polygon {
     z-index: 2;
@@ -62,7 +68,7 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 60px;
-    color: #ADFFFA  ;
+    color: #DDFFA6  ;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -74,7 +80,7 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    width: 80%;
+    width: 100%;
     color: #F1F1F6;
     display: block;
     letter-spacing: 2px;
@@ -82,19 +88,20 @@ h1, h2, h3 {
 .resume {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: #F1F1F6;
+    color: rgb(214, 214, 214);
     background-color: #57A773;
     margin-top: 20px;
     padding: 8px;
     border-radius: 5px;
     display: inline-block;
-    /*transition: 0.3s;
-    animation: glowing 2000ms infinite;*/
+    transition: 0.3s;
+    /*animation: glowing 2000ms infinite;*/
 }
 
 .resume:hover {
     background-color: #409749;
-    color: rgba(255, 255, 255, 0.445);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px rgb(7, 7, 7);
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
@@ -114,12 +121,15 @@ h1, h2, h3 {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 80%;
-    height: 40px;
-    background-color: #6A8EAE;
-    padding: 5vh 10%;
+    height: 20px;
+    background-color: none;
+    /*background-color: rgb(18, 18, 44);
+    border-bottom: 2px solid rgb(241, 201, 68);*/
+    padding: 3vh 10%;
+    padding-bottom: 4vh;
 }
 
 .navbar-content {
@@ -150,11 +160,17 @@ h1, h2, h3 {
 }
 
 .home-card{
+    border: 2px solid white;
+    /* top right bottom left*/
+    padding: 10px 40px 40px 40px;
+    margin-right: 10%;
 }
 
 .card-box {
     border: 2px solid white;
+    transition: color 0.25s;
 }
+
 /* Section II: My Background */
 #background-container {
     height: 80vh;
@@ -164,21 +180,25 @@ h1, h2, h3 {
     padding: 10vh 15%;
 }
 
+.about-card {
+    margin-right: 10%;
+    width: 80%;
+    display:flex;
+}
+
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 35px;
+    width: 25%;
     color: #F1F1F6;
+    margin: auto 0;
+    margin-right: 0px;
 }
-
-.background-hr{
-    display: inline-block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #F1F1F6;
-    width: 80%;
-    margin: 0.6em 0;
-    padding: 0;
+.profile-desc {
+    text-align: justify;
+    border-left: 2px solid #F1F1F6;
+    padding-left: 20px;
 }
 
 .width-30vw {
@@ -203,12 +223,6 @@ h1, h2, h3 {
     z-index: 2;
 }
 
-.profile-picture {
-    position: absolute;
-    top: 124vh;
-    right: 19.75vw;
-    z-index: 3;
-}
 
 /* Section III: Noteworthy Projects*/
 #projects-container {
@@ -305,6 +319,7 @@ h3.regular-text {
 
     .profile-desc {
         width: 500px;
+        text-align: justify;
     }
 }
 
@@ -323,7 +338,7 @@ h3.regular-text {
   }
 
 @keyframes glowing {
-    0% { background-color: rgb(72, 77, 226); box-shadow: 0 0 3px rgb(72, 77, 226); }
-    50% { background-color: rgb(103, 108, 235); box-shadow: 0 0 10px rgb(103, 108, 235); }
-    100% { background-color: #767BF2; box-shadow: 0 0 3px #767BF2; }
+    0% { background-color: #57A773; box-shadow: 0 0 3px #57A773; }
+    50% { background-color: #57b160; box-shadow: 0 0 10px #489950; }
+    100% { background-color: #409749; box-shadow: 0 0 3px #409749; }
 }
