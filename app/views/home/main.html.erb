@@ -43,32 +43,20 @@
             <h1 class='section-title'>About Me</h1>
             <p class="sub-text width-30vw profile-desc">Hello, I’m Jonathan, a software engineer based in New Brunswick, NJ. I’m expecting to graduate from Rutgers University School of Engineering in May of 2020, pursuing a Bachelor of Science in Computer Engineering with a minor in Computer Science.</p>
          </div>
-         <%= image_tag 'jon.png', :class => 'profile-visual'%>
+         <%= image_tag 'jon.png', :class => 'profile-visual'%>         
       </div>
    </div>
 </section>
 
 
-<% if false %>
 <section id='projects-container'>
-   <div class='content'>
-      <h1 class='section-title'>Noteworthy Projects</h1> <hr class='projects-hr'>
-      <div class='project-row'>
-         <div class='project-text-left'>
-            <h3 class="project-title regular-text bold marg-top-7vh">Project Title</h3> <br>
-            <p class="project-desc sub-text width-20vw marg-top-4vh">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus convallis pellentesque. Cras velit metus, ornare nec augue et, gravida volutpat justo. Nullam quis ex et nibh varius blandit a quis tortor. Integer ac dui augue. Phasellus imperdiet faucibus risus. In lectus arcu, rhoncus quis elit ut, condimentum posuere augue. </p>
-            <i class="fab fa-github"></i>
-         </div>
-         <%= image_tag 'project_rectangle.png', :class => 'project-rectangle-right marg-top-7vh', :height => '300'%>
-      </div>
-      
-      <div class='project-row marg-top-10vh'>
-         <div class='project-text-right'>
-            <h3 class="project-title regular-text bold marg-top-10vh">Project Title</h3> <br>
-            <p class="project-desc sub-text width-20vw marg-top-4vh">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus convallis pellentesque. Cras velit metus, ornare nec augue et, gravida volutpat justo. Nullam quis ex et nibh varius blandit a quis tortor. Integer ac dui augue. Phasellus imperdiet faucibus risus. In lectus arcu, rhoncus quis elit ut, condimentum posuere augue. </p>
-         </div>
-         <%= image_tag 'project_rectangle.png', :class => 'project-rectangle-left marg-top-10vh', :height => '300'%>
-      </div>
-   </div>
+  <h1>Projects</h1>
 </section>
-<% end %>
+
+<section id='contact-container'>
+<%= render 'contact-form' %>
+</section>
+
+<footer id='footer'>
+   
+</footer>

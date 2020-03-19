@@ -1,0 +1,9 @@
+<div class='contact-box'>
+    <h1>Contact Me</h1>
+    <%= form_for @contact, :html => { :id => 'contact-form'} do |f|%>
+        <%= f.text_field :name, :placeholder => 'Enter your name', :class => 'contact-input' %>
+        <%= f.email_field :email, :placeholder => 'E-mail address', :class => 'contact-input'%>
+        <%= f.text_area :message, :placeholder => 'Your message', :class => 'contact-input' %>
+        <%= f.submit 'Submit' %>
+    <% end %>
+</div>
