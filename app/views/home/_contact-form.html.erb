@@ -1,5 +1,6 @@
 <div class='contact-box'>
     <h1>Contact Me</h1>
+    <p>Have a question or want to work together? Or even just let me know what you think!</p>
     <%= form_for @contact, :html => { :id => 'contact-form'} do |f|%>
         <%= f.text_field :name, :placeholder => 'Enter your name', :class => 'contact-input' %>
         <%= f.email_field :email, :placeholder => 'E-mail address', :class => 'contact-input'%>
