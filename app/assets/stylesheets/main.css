@@ -260,10 +260,15 @@ h1, h2, h3 {
     background-color: #FCFFFD;
     padding: 10vh 15%;
 }
-
+.inner-content-background {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .about-card {
-    margin-right: 10%;
-    width: 80%;
+    margin-right: 5%;
+    width: 70%;
+    max-height: 200px;
     display:flex;
 }
 
@@ -282,29 +287,9 @@ h1, h2, h3 {
     border-left: 2px solid black;
     padding-left: 20px;
 }
-
-.width-30vw {
-    width: 30vw;
+.profile-visual {
+    width: 25%;
 }
-
-.marg-top-7vh {
-    margin-top: 7vh;
-}
-
-.profile-border-square-1 {
-    position: absolute;
-    top: 122vh;
-    right: 20.75vw;
-    z-index: 1;
-}
-
-.profile-border-square-2 {
-    position: absolute;
-    top: 126vh;
-    right: 18.75vw;
-    z-index: 2;
-}
-
 /* Project Modal */
 
 #modal {
